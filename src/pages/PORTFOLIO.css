@@ -1,0 +1,126 @@
+.ms-icon {
+  position: relative;
+  width: 68.32px;
+  height: 41.87px;
+  flex-shrink: 0;
+}
+.resume {
+  color: inherit;
+  cursor: pointer;
+}
+.about:hover,
+.project:hover,
+.resume:hover {
+  color: var(--color-royalblue-300);
+  text-shadow: 0 4px 4px rgba(35, 82, 214, 0.5);
+  cursor: pointer;
+}
+.about,
+.project,
+.resume {
+  text-decoration: none;
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 27.84px;
+}
+.about {
+  color: var(--color-gainsboro);
+  cursor: pointer;
+}
+.project {
+  color: inherit;
+  cursor: auto;
+}
+.header,
+.links,
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+}
+.links {
+  flex-direction: row;
+  padding: 0 4px;
+  align-items: flex-start;
+  gap: 79px;
+}
+.header,
+.navbar {
+  background-color: var(--color-black);
+  box-sizing: border-box;
+}
+.navbar {
+  width: 1419px;
+  flex-direction: row;
+  padding: 0 79px;
+  align-items: center;
+  gap: 783px;
+  cursor: auto;
+}
+.header {
+  width: 1536px;
+  height: 112px;
+  flex-shrink: 0;
+  flex-direction: column;
+  padding: var(--padding-base) 43px 0;
+  align-items: flex-start;
+}
+.ending-child {
+  text-decoration: none;
+  height: 662px;
+  flex-shrink: 0;
+  margin-top: -16px;
+}
+.ending,
+.ending-inner,
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.ending-inner {
+  align-items: flex-start;
+  margin-top: -16px;
+}
+.ending,
+.portfolio {
+  background-color: var(--color-black);
+}
+.ending {
+  width: 1536px;
+  height: 1214px;
+  flex-shrink: 0;
+  overflow: hidden;
+  padding: 67px 0;
+  box-sizing: border-box;
+  align-items: center;
+}
+.portfolio {
+  position: relative;
+  width: 100%;
+  align-items: flex-start;
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  color: var(--color-white);
+  font-family: var(--font-space-grotesk);
+}
+@media screen and (max-width: 1200px) {
+  .links {
+    display: flex;
+  }
+}
+@media screen and (max-width: 960px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 420px) {
+  .links {
+    display: none;
+    flex-direction: column;
+  }
+  .header {
+    padding: var(--padding-base) 20px;
+    box-sizing: border-box;
+  }
+}

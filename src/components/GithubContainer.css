@@ -1,0 +1,536 @@
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes bounce-in-top {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+  72%,
+  90%,
+  to {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+}
+@keyframes wobble-hor-bottom {
+  0%,
+  to {
+    transform: translateX(0);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+.frame-child {
+  border-radius: 0 92.03px 0 92.03px;
+}
+.frame-child,
+.frame-child1,
+.frame-item {
+  position: relative;
+  border: 5px solid var(--color-royalblue-200);
+  box-sizing: border-box;
+  width: 99px;
+  height: 99px;
+  flex-shrink: 0;
+}
+.frame-item {
+  border-radius: 0 92.03px 0 92.03px;
+  transform: rotate(180deg);
+  transform-origin: 0 0;
+}
+.frame-child1 {
+  border-radius: var(--br-41xl);
+}
+.rectangle-parent {
+  filter: blur(85px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.programmer-icon,
+.vector-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 469.71px;
+  height: 65.29px;
+}
+.programmer-icon {
+  top: 93.82px;
+  left: 0.09px;
+  width: 241.89px;
+  height: 91.62px;
+  opacity: 0;
+}
+.programmer-icon.animate {
+  animation: 5s ease 0s 1 normal forwards slide-in-top;
+}
+.iiit-delhi {
+  position: absolute;
+  top: 221.42px;
+  left: 0.94px;
+  width: 185.39px;
+  height: 37.54px;
+}
+.bio-icon,
+.vector-parent {
+  position: absolute;
+  top: 311.08px;
+  left: 1.7px;
+  width: 577.25px;
+  height: 255.62px;
+}
+.vector-parent {
+  top: 0;
+  left: 0;
+  width: 578.96px;
+  height: 566.7px;
+}
+.group-wrapper {
+  position: relative;
+  width: 578.96px;
+  height: 566.7px;
+  flex-shrink: 0;
+}
+.frame-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.git-branch-animation,
+.light-container {
+  position: absolute;
+  top: 8.43px;
+  left: -2.91px;
+  width: 175px;
+  height: 486.96px;
+}
+.light-container {
+  top: 0;
+  left: 343px;
+  width: 119px;
+  height: 465px;
+}
+.light-container:hover {
+  animation: 13s ease 0s 1 normal forwards slide-in-bottom;
+  opacity: 1;
+}
+.githubframe-child {
+  position: absolute;
+  top: 84.26px;
+  left: 25.06px;
+  border-radius: 3.63px;
+  background-color: var(--color-gray-800);
+  border: 0.4px solid var(--color-darkslategray-200);
+  box-sizing: border-box;
+  width: 327.23px;
+  height: 147.09px;
+}
+.githubframe-item {
+  position: absolute;
+  top: 84.62px;
+  left: 25.42px;
+  border-radius: 3.63px 3.63px 0 0;
+  background-color: var(--color-gray-500);
+  width: 326.5px;
+  height: 14.16px;
+}
+.githubframe-child1,
+.githubframe-child2,
+.githubframe-child3,
+.githubframe-inner {
+  position: absolute;
+  top: 67.19px;
+  left: 319.97px;
+  border-radius: 2.18px;
+  background-color: var(--color-royalblue-100);
+  border: 0.4px solid var(--color-cornflowerblue-100);
+  box-sizing: border-box;
+  width: 31.23px;
+  height: 11.62px;
+}
+.githubframe-child1,
+.githubframe-child2,
+.githubframe-child3 {
+  left: 280.38px;
+  background-color: var(--color-gray-300);
+  border: 0.4px solid var(--color-darkslategray-100);
+  width: 31.96px;
+}
+.githubframe-child2,
+.githubframe-child3 {
+  left: 241.52px;
+  width: 31.23px;
+}
+.githubframe-child3 {
+  left: 25.42px;
+}
+.span {
+  color: var(--color-steelblue);
+}
+.span1 {
+  color: var(--color-lightslategray);
+}
+.manik21336 {
+  font-weight: 600;
+}
+.beginner,
+.github-manik21336-container {
+  position: absolute;
+  top: 15.62px;
+  left: 26.88px;
+  letter-spacing: -0.02em;
+  line-height: 18.68px;
+}
+.beginner {
+  top: 37px;
+  left: 27px;
+  font-size: 7.11px;
+  line-height: 8.85px;
+  color: var(--color-darkgray-100);
+}
+.githubframe {
+  position: absolute;
+  top: 50px;
+  left: 124px;
+  border-radius: var(--br-mini);
+  background-color: var(--color-gray-800);
+  border: 1px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  width: 407px;
+  height: 219px;
+  overflow: hidden;
+}
+.group-child,
+.group-item {
+  position: absolute;
+  top: 85px;
+  left: -4px;
+  width: 50px;
+  height: 48px;
+}
+.group-item {
+  top: 118px;
+  left: 23px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-gray-600);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--color-darkslateblue);
+  box-sizing: border-box;
+  width: 348px;
+  height: 221px;
+  opacity: 0.9;
+}
+.vector-icon1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector {
+  position: absolute;
+  top: 281.63px;
+  left: 65.27px;
+  width: 28.46px;
+  height: 29.33px;
+  opacity: 0;
+}
+.vector.animate {
+  animation: 1s ease 0s infinite normal forwards bounce-in-top;
+}
+.photo-surface-icon {
+  height: 90.63%;
+  width: 93.75%;
+  top: 4.69%;
+  right: 3.13%;
+  bottom: 4.69%;
+  left: 3.13%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.adobe-indesign-1,
+.photo-surface-icon,
+.vector-icon2 {
+  position: absolute;
+  overflow: hidden;
+}
+.vector-icon2 {
+  height: 44.53%;
+  width: 40.62%;
+  top: 28.12%;
+  right: 29.7%;
+  bottom: 27.34%;
+  left: 29.68%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.adobe-indesign-1 {
+  top: 203px;
+  left: 275px;
+  width: 41px;
+  height: 41px;
+  opacity: 0;
+}
+.adobe-indesign-1.animate {
+  animation: 2.5s ease 0s infinite normal forwards bounce-in-top;
+}
+.git-regular-icon {
+  top: 203.56px;
+  left: 212.48px;
+  width: 40.04px;
+  height: 39.88px;
+}
+.git-regular-icon,
+.react,
+.vector-icon3 {
+  position: absolute;
+  overflow: hidden;
+}
+.vector-icon3 {
+  height: 88.97%;
+  width: 100%;
+  top: 5.47%;
+  right: 0;
+  bottom: 5.56%;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+.react {
+  top: 203px;
+  left: 59px;
+  width: 41px;
+  height: 41px;
+  opacity: 0;
+}
+.react.animate {
+  animation: 5s ease 0s infinite normal forwards bounce-in-top;
+}
+.shape-icon {
+  height: 97.48%;
+  width: 86.51%;
+  top: 1.17%;
+  right: 6.66%;
+  bottom: 1.35%;
+  left: 6.84%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.nodejs,
+.shape-icon,
+.vector-icon4 {
+  position: absolute;
+  overflow: hidden;
+}
+.nodejs {
+  top: 203px;
+  left: 110px;
+  width: 41px;
+  height: 41px;
+  opacity: 0;
+}
+.nodejs.animate {
+  animation: 2s ease 0s infinite normal forwards bounce-in-top;
+}
+.vector-icon4 {
+  top: 66.67%;
+  right: 49.87%;
+  bottom: 0;
+  left: 16.8%;
+}
+.vector-icon4,
+.vector-icon5,
+.vector-icon6,
+.vector-icon7 {
+  height: 33.33%;
+  width: 33.33%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.vector-icon5 {
+  position: absolute;
+  top: 33.33%;
+  right: 49.87%;
+  bottom: 33.33%;
+  left: 16.8%;
+  overflow: hidden;
+}
+.vector-icon6,
+.vector-icon7 {
+  top: 0;
+  bottom: 66.67%;
+}
+.vector-icon6 {
+  position: absolute;
+  right: 49.87%;
+  left: 16.8%;
+  overflow: hidden;
+}
+.vector-icon7 {
+  right: 16.54%;
+  left: 50.13%;
+}
+.figma,
+.vector-icon7,
+.vector-icon8 {
+  position: absolute;
+  overflow: hidden;
+}
+.vector-icon8 {
+  height: 33.33%;
+  width: 33.33%;
+  top: 33.33%;
+  right: 16.54%;
+  bottom: 33.33%;
+  left: 50.13%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.figma {
+  top: 203px;
+  left: 161px;
+  width: 41px;
+  height: 41px;
+  opacity: 0;
+}
+.figma.animate {
+  animation: 4s ease 0s infinite normal forwards bounce-in-top;
+}
+.tech-stack {
+  position: absolute;
+  top: 132px;
+  left: 55px;
+  font-size: 27.06px;
+  letter-spacing: -0.02em;
+  line-height: 40.63px;
+  font-weight: 500;
+  font-family: var(--font-space-grotesk);
+  color: var(--color-gray-100);
+}
+.logo-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 41px;
+  height: 41px;
+}
+.git-regular-icon1 {
+  position: absolute;
+  top: 0.56px;
+  left: 0.48px;
+  width: 40.04px;
+  height: 39.88px;
+  overflow: hidden;
+  display: none;
+}
+.git,
+.git1 {
+  position: absolute;
+}
+.git1 {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+}
+.git1.animate {
+  animation: 2.5s ease 0s infinite normal forwards bounce-in-top;
+}
+.git {
+  top: 203px;
+  left: 212px;
+  width: 41px;
+  height: 41px;
+  opacity: 1;
+}
+.git.animate {
+  animation: 3s ease 0s infinite normal forwards wobble-hor-bottom;
+}
+.light-container-parent {
+  position: relative;
+  width: 531px;
+  height: 465px;
+  flex-shrink: 0;
+}
+.frame-parent,
+.introduction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-107xl);
+}
+.introduction {
+  background-color: var(--color-black);
+  height: 771px;
+  flex-shrink: 0;
+  overflow: hidden;
+  padding: 0 var(--padding-19xl) var(--padding-21xl) 0;
+  box-sizing: border-box;
+  gap: var(--gap-5xl);
+  text-align: left;
+  font-size: 15.01px;
+  color: var(--color-cornflowerblue-200);
+  font-family: var(--font-open-sans);
+}

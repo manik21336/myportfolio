@@ -1,0 +1,150 @@
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.glow-child {
+  position: absolute;
+  height: 91.4%;
+  width: 99.69%;
+  top: 8.62%;
+  right: 0.31%;
+  bottom: -0.02%;
+  left: 0;
+  background: linear-gradient(
+    91.14deg,
+    #000 23.23%,
+    #9fa627 63.85%,
+    #1d4ed8 85.21%,
+    #1d4ed8
+  );
+  filter: blur(19px);
+  transform: rotate(-0.92deg);
+  transform-origin: 0 0;
+  opacity: 0.7;
+}
+.glow {
+  opacity: 0;
+}
+.glow.animate {
+  animation: 5s ease 0s infinite normal forwards slide-in-right;
+}
+.glow,
+.glow-item,
+.glow-wrapper,
+.group-wrapper11 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1347.08px;
+  height: 250px;
+}
+.glow-item,
+.group-wrapper11 {
+  left: 32px;
+}
+.glow-item {
+  height: 91.4%;
+  width: 99.69%;
+  top: 8.62%;
+  right: 0.31%;
+  bottom: -0.02%;
+  left: 0;
+  background: linear-gradient(91.14deg, #1d4ed8, #0f132a 91.98%);
+  filter: blur(19px);
+  transform: rotate(-0.92deg);
+  transform-origin: 0 0;
+  opacity: 0.7;
+}
+.glow-container,
+.vector-icon12 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1347.08px;
+  height: 250px;
+  opacity: 0;
+}
+.glow-container.animate {
+  animation: 5s ease 0s infinite normal forwards slide-in-left;
+}
+.vector-icon12 {
+  top: 27.62px;
+  left: 159.34px;
+  width: 946.94px;
+  height: 159.17px;
+}
+.vector-icon12.animate {
+  animation: 10s ease 0s 1 normal forwards fade-in;
+}
+.frame-wrapper3,
+.vector-frame {
+  position: absolute;
+  width: 1358px;
+  height: 216.93px;
+}
+.vector-frame {
+  top: 0;
+  left: 0;
+  background-color: var(--color-gray-700);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  opacity: 0;
+}
+.vector-frame.animate {
+  animation: 0s ease 0s 1 normal forwards fade-in;
+}
+.frame-wrapper3 {
+  top: 17.19px;
+  left: 8px;
+}
+.group-parent2,
+.group-wrapper12 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1366px;
+  height: 250px;
+}
+.group-wrapper12 {
+  top: 11px;
+}
+.frame-parent2 {
+  position: relative;
+  width: 1379.08px;
+  height: 261px;
+  flex-shrink: 0;
+}
+.ending-inner1,
+.group-wrapper10 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.ending-inner1 {
+  background-color: var(--color-black);
+}

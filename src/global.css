@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-space-grotesk: "Space Grotesk";
+  --font-open-sans: "Open Sans";
+
+  /* font sizes */
+  --font-size-2xl: 21px;
+  --font-size-lgi-3: 19.3px;
+  --font-size-16xl: 35px;
+  --font-size-mid-3: 17.3px;
+  --font-size-lg-3: 18.3px;
+  --font-size-7xl: 26px;
+  --font-size-3xl: 22px;
+  --font-size-31xl: 50px;
+  --font-size-8xl-1: 27.1px;
+  --font-size-5xs-1: 7.1px;
+  --font-size-mini: 15px;
+
+  /* Colors */
+  --color-black: #000;
+  --color-darkgray-100: #b3b3b3;
+  --color-darkgray-200: #a1a1a1;
+  --color-darkgray-300: #979797;
+  --color-gray-100: #949494;
+  --color-gray-200: #1e293b;
+  --color-gray-300: #21262d;
+  --color-gray-400: #1a1a2c;
+  --color-gray-500: #161b22;
+  --color-gray-600: #0f172a;
+  --color-gray-700: #10101e;
+  --color-gray-800: #0d1117;
+  --color-white: #fff;
+  --color-royalblue-100: #1f6feb;
+  --color-royalblue-200: #2563eb;
+  --color-royalblue-300: #2352d6;
+  --color-gainsboro: #d9d9d9;
+  --color-mediumslateblue: #0066ff;
+  --color-darkslateblue: #0f2f76;
+  --color-darkslategray-100: #475569;
+  --color-darkslategray-200: #30363d;
+  --color-cornflowerblue-100: #6c96f2;
+  --color-cornflowerblue-200: #4da1f4;
+  --color-lightslategray: #94a3b8;
+  --color-steelblue: #58a1d2;
+
+  /* Gaps */
+  --gap-mini: 15px;
+  --gap-lgi: 19px;
+  --gap-8xs: 5px;
+  --gap-5xl: 24px;
+  --gap-107xl: 126px;
+
+  /* Paddings */
+  --padding-134xl: 153px;
+  --padding-219xl: 238px;
+  --padding-147xl: 166px;
+  --padding-146xl: 165px;
+  --padding-118xl: 137px;
+  --padding-101xl: 120px;
+  --padding-19xl: 38px;
+  --padding-21xl: 40px;
+  --padding-base: 16px;
+
+  /* border radiuses */
+  --br-81xl: 100px;
+  --br-41xl: 60px;
+  --br-73xl: 92px;
+  --br-xl: 20px;
+  --br-mini: 15px;
+  --br-10xs-2: 2.2px;
+  --br-9xs-6: 3.6px;
+}
